@@ -1,0 +1,34 @@
+.container {max-width: 1280px; 
+margin: 80px; 
+display: flex;  min-height: 580px; justify-content: space-between; align-items: flex-start; 
+ 
+
+}
+
+.container__img {display: flex; gap: 80px; align-items: flex-start; height: 100%; }
+.img {background-size: cover; background-repeat: no-repeat;  width: 240px; height: 500px;}
+.img--one {background-image: url(../img/Contact\ Image\ 1.jpg); margin-top: 80px; }
+.img--two {background-image: url(../img/Contact\ Image\ 2.jpg); }
+
+
+@media screen and (max-width: 1100px){
+    .container {margin: 20px; min-height: 500px;
+   
+} 
+
+.container__img {gap: 0; }  
+.img--one {margin-top: 0;}
+}
+
+@media screen and (max-width: 1000px){
+    .container {flex-direction: column; 
+   
+} 
+
+.container__img {order: -1; max-height: 250px; width: 100%; 
+    &img {max-height: 250px; background-size: contain; } overflow: hidden; margin-bottom: 40px; 
+}  
+.img--one, .img--two {width: 50%; background-position: bottom ;}
+
+.container__form {width: 100%;}
+}

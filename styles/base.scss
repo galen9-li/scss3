@@ -1,0 +1,7 @@
+@include font-face ($font-base, 'fonts/Poppins-Regular' );
+@include font-face ($font-headline, 'fonts/PlayfairDisplay', 700);
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: $font-base; background-color: $bg-color;
+   color: $color ;}

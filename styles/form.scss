@@ -1,0 +1,17 @@
+
+
+.form {display: flex; flex-direction: column; width: 100%;}
+
+.form__item {background-color: $bg-color; color: $color; border: 1px solid rgba($color: #fff, $alpha: .6); border-radius: .2rem; padding: 1.1rem;
+    &::placeholder {font-family: $font-base; color: $color; opacity: .6;}
+}
+
+.h1 {font-family: $font-headline; color: $color; font-size: 3rem; line-height: 1.2em; margin-bottom: 1.5rem;}
+.desc--form {font-family: $font-base; font-size: 1rem; line-height: 2em; margin-bottom: 2.5rem;}
+
+.form__up {margin-bottom: 1.5rem; width: 100%; display: flex; justify-content: space-between; gap: 1.2rem;
+}
+.form__up--item { min-width: calc(50% - .6rem); 
+}
+.form__mes {margin-bottom: 1.5rem; width: 100%;}
+

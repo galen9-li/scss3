@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PlayfireDisplay";
+  src: url("fonts/PlayfairDisplay");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: rgb(25, 22, 27);
+  color: #fff;
+}
+
+.btn {
+  font-family: "Poppins";
+  background: rgb(39, 37, 45);
+  color: #fff;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  max-width: 40%;
+  border: 0;
+  padding: 1.1rem 1.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__item {
+  background-color: rgb(25, 22, 27);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0.2rem;
+  padding: 1.1rem;
+}
+.form__item::-moz-placeholder {
+  font-family: "Poppins";
+  color: #fff;
+  opacity: 0.6;
+}
+.form__item::placeholder {
+  font-family: "Poppins";
+  color: #fff;
+  opacity: 0.6;
+}
+
+.h1 {
+  font-family: "PlayfireDisplay";
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.2em;
+  margin-bottom: 1.5rem;
+}
+
+.desc--form {
+  font-family: "Poppins";
+  font-size: 1rem;
+  line-height: 2em;
+  margin-bottom: 2.5rem;
+}
+
+.form__up {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.form__up--item {
+  min-width: calc(50% - 0.6rem);
+}
+
+.form__mes {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 80px;
+  display: flex;
+  min-height: 580px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container__img {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 500px;
+}
+
+.img--one {
+  background-image: url(../img/Contact\ Image\ 1.jpg);
+  margin-top: 80px;
+}
+
+.img--two {
+  background-image: url(../img/Contact\ Image\ 2.jpg);
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    margin: 20px;
+    min-height: 500px;
+  }
+  .container__img {
+    gap: 0;
+  }
+  .img--one {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .container__img {
+    order: -1;
+    max-height: 250px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  .container__imgimg {
+    max-height: 250px;
+    background-size: contain;
+  }
+  .img--one, .img--two {
+    width: 50%;
+    background-position: bottom;
+  }
+  .container__form {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
